@@ -2,6 +2,7 @@ package com.example.drawtest
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log.println
 import android.view.MotionEvent
 import android.widget.Button
 import android.widget.RelativeLayout
@@ -46,6 +47,14 @@ class MainActivity : AppCompatActivity() {
                 bOpened = true
                 openDraw()
             }
+        }
+
+        val btn2 = findViewById<Button>(R.id.btn2)
+
+        btn2.setOnClickListener {
+
+            println("---> btn2 clicked")
+
         }
     }
 
